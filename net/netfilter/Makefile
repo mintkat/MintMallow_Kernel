@@ -1,4 +1,4 @@
-CFLAGS_KERNEL	:= -fno-unsafe-math-optimizations
+ CFLAGS_KERNEL := -fno-graphite -fno-fast-math -fno-strict-aliasing -fno-unsafe-math-optimizations -fno-loop-unroll-and-jam 
 
 netfilter-objs := core.o nf_log.o nf_queue.o nf_sockopt.o
 
